@@ -5,6 +5,7 @@ import {
   AvatarImage,
   AvatarFallback,
 } from "@/src/components/ui/avatar";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -16,7 +17,27 @@ const Header = () => {
         />
         <AvatarFallback>BN-T</AvatarFallback>
       </Avatar>
-      <nav>
+            {/* Liens à droite */}
+      <nav className="flex items-center gap-4">
+        {/* Lien GitHub */}
+        <Link
+          href="https://github.com/benjaminnicolas-teboul"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub className="w-6 h-6 " />
+        </Link>
+
+        {/* Lien LinkedIn */}
+        <Link
+          href="https://www.linkedin.com/in/benjamin-nicolas-teboul-084a27364/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin className="w-6 h-6 text-white" />
+        </Link>
         <Button asChild>
         <Link href="/mon-cv.pdf" target="_blank">
             Mon CV
