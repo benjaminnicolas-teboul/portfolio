@@ -17,7 +17,7 @@ const Header = () => {
         />
         <AvatarFallback>BN-T</AvatarFallback>
       </Avatar>
-            {/* Liens à droite */}
+            
       <nav className="flex items-center gap-4">
         {/* Lien GitHub */}
         <Link
@@ -40,7 +40,7 @@ const Header = () => {
         </Link>
         <Button asChild>
         <Link href="/mon-cv.pdf" target="_blank">
-            Mon CV
+            My CV
           </Link>
         </Button>
       </nav>
