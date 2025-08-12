@@ -23,4 +23,20 @@ export const skillsData = [
     avatarSrc: "/images/redux.webp",
     title: "Redux",
     description: "Global state management with Redux."
- }]
+  },
+  {
+    avatarSrc: "/images/next.webp",
+    title: "Next.js",
+    description: "React framework for server-side rendering and high-performance web applications."
+  },
+  {
+    avatarSrc: "/images/tailwind.webp",
+    title: "Tailwind CSS",
+    description: "Utility-first CSS framework for rapid and responsive design."
+  },
+  {
+    avatarSrc: "/images/git.webp",
+    title: "Git",
+    description: "Version control and efficient collaboration."
+  }
+];

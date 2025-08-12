@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-800 p-4">
+    <footer className="w-full bg-background p-4 text-foreground">
       <nav className="flex justify-end items-center gap-4">
         {/* Lien GitHub */}
         <Link
@@ -12,7 +12,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <FaGithub className="w-6 h-6 text-white hover:text-gray-400 transition-colors" />
+          <FaGithub className="w-6 h-6 text-foreground hover:text-gray-500 dark:hover:text-gray-400 transition-colors" />
         </Link>
 
         {/* Lien LinkedIn */}
@@ -22,7 +22,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
         >
-          <FaLinkedin className="w-6 h-6 text-white hover:text-gray-400 transition-colors" />
+          <FaLinkedin className="w-6 h-6 text-foreground hover:text-gray-500 dark:hover:text-gray-400 transition-colors" />
         </Link>
       </nav>
     </footer>
