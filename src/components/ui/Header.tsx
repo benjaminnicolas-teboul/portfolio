@@ -58,7 +58,7 @@ const Header = () => {
         >
           {isDark ? (
             // Dark mode active → show moon in subtle black circle with white icon
-            <span className="inline-flex rounded-full bg-black/30 p-1">
+            <span className="inline-flex rounded-full bg-gray-800/30 p-1">
               <FaMoon size={24} className="text-white" />
             </span>
           ) : (
