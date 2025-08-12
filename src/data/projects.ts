@@ -10,15 +10,21 @@ const Projects : ProjectProps[] =
 [
   {
     "title": "Ohmyfood",
-    "description": "Implementing animations in An Restaurant ap with html end scss ",
+    "description": "Enhanced a mobile website’s interface by creating and optimizing CSS animations to deliver a smooth, engaging user experience.",
     "link": "https://benjaminnicolas-teboul.github.io/ohmyfood/html/index.html",
     "images": ["/images/ohmyfood.webp"]
   },
     {
     "title": "Printit",
-    "description": "Implementing caroussel in an Printing company ap using js ",
+    "description": "Enhanced a printing company page using Js css and html",
     "link": "https://benjaminnicolas-teboul.github.io/Print-it-JS-main/",
     "images": ["/images/printIt.webp"]
+  },
+      {
+    "title": "NinaCarducci",
+    "description": "Debugged and enhanced a one-page event agency website, resolving issues and ensuring quality using JavaScript, React, and modern development tools",
+    "link": "https://benjaminnicolas-teboul.github.io/NinaCarducci/",
+    "images": ["/images/nina.webp"]
   }
 ]
 

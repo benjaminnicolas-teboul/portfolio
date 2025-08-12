@@ -28,7 +28,7 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voir le site
+                Link to website
               </Link>
             </Button>
           )}
@@ -36,7 +36,7 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
 
         {/* Colonne droite : image */}
         {images && images.length > 0 && (
-          <div className="w-full md:w-1/2 md:flex md:justify-end">
+          <div className="w-full md:w-1/2 md:flex md:justify-end object-contain">
             <div
               className="
                 relative overflow-hidden rounded-md shadow-sm
