@@ -48,6 +48,7 @@ const SkillsSection = ({ skills }: SkillsSectionProps) => {
   return (
     <section className="w-full bg-gray-800 p-6">
       <div className="max-w-4xl mx-auto grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <h2 className="col-span-full text-3xl font-bold text-white text-center pb-2">My skills :</h2>
         {skills.map((skill, index) => (
           <Skill
             key={index}
