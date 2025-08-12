@@ -18,7 +18,7 @@ const Projects : ProjectProps[] =
     "title": "Printit",
     "description": "Enhanced a printing company page using Js css and html",
     "link": "https://benjaminnicolas-teboul.github.io/Print-it-JS-main/",
-    "images": ["/images/printIt.webp"]
+    "images": ["/images/PrintIt.webp"]
   },
       {
     "title": "NinaCarducci",

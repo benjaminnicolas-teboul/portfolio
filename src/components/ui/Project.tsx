@@ -48,7 +48,7 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
                 src={images[0]}
                 alt={`${title} image`}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 40vw"
                 priority
               />
