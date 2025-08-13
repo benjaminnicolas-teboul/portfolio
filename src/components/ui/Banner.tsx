@@ -18,7 +18,7 @@ const Banner = ({
     <section className="w-full flex h-96 md:h-[600px] overflow-hidden shadow-md">
       {/* Partie gauche : fond noir avec texte (40%) */}
       <div className="overflow-hidden text-ellipsis w-2/5 bg-black flex flex-col justify-center p-6 md:p-12 text-white">
-        <h2 className="text-4xl md:text-6xl font-bold mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 break-words">
           {titleSpans.map((text, index) => (
             <span key={index} className="block">
               {text}
