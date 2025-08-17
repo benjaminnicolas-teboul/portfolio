@@ -94,7 +94,7 @@ const Header = () => {
           asChild
           className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
-          <Link href="/mon-cv.pdf" target="_blank">
+          <Link href="/CV-BENJAMIN-NICOLAS-TEBOUL.pdf" target="_blank">
             My CV
           </Link>
         </Button>
