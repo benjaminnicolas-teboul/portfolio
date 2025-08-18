@@ -25,7 +25,7 @@ const Projects : ProjectProps[] =
     "description": "Debugged and enhanced a one-page event agency website, resolving issues and ensuring quality using JavaScript, React, and modern development tools",
     "link": "https://benjaminnicolas-teboul.github.io/NinaCarducci/",
     "images": ["/images/nina.webp"]
-  }
+  },
         {
     "title": "React-meteo",
     "description": "React-Meteo is a modern, responsive weather application built with React and Vite, offering real-time forecasts worldwide.",
