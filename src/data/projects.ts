@@ -26,6 +26,12 @@ const Projects : ProjectProps[] =
     "link": "https://benjaminnicolas-teboul.github.io/NinaCarducci/",
     "images": ["/images/nina.webp"]
   }
+        {
+    "title": "React-meteo",
+    "description": "React-Meteo is a modern, responsive weather application built with React and Vite, offering real-time forecasts worldwide.",
+    "link": "https://benjaminnicolas-teboul.github.io/meteo-react",
+    "images": ["/images/meteo.webp"]
+  }
 ]
 
 export default Projects;
