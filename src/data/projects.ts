@@ -34,7 +34,7 @@ const Projects : ProjectProps[] =
   },
           {
     "title": "Memory",
-    "description": "Developed using JavaScript, CSS, and backend technologies. This project demonstrates effective teamwork, integration of frontend and backend components, and clean, maintainable code for a smooth user experience.",
+    "description": "Developed using JavaScript, CSS, MongoDB, and Node.js. This project demonstrates effective integration of frontend and backend components, as well as clean, maintainable code for a smooth user experience.",
     "link": "https://benjaminnicolas-teboul.github.io/memory/",
     "images": ["/images/memo.webp"]
   }
