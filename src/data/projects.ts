@@ -31,6 +31,12 @@ const Projects : ProjectProps[] =
     "description": "React-Meteo is a modern, responsive weather application built with React and Vite, offering real-time forecasts worldwide.",
     "link": "https://benjaminnicolas-teboul.github.io/meteo-react",
     "images": ["/images/meteo.webp"]
+  },
+          {
+    "title": "Memory",
+    "description": "Developed using JavaScript, CSS, and backend technologies. This project demonstrates effective teamwork, integration of frontend and backend components, and clean, maintainable code for a smooth user experience.",
+    "link": "https://benjaminnicolas-teboul.github.io/memory/",
+    "images": ["/images/memo.webp"]
   }
 ]
 
