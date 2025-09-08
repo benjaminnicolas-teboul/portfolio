@@ -42,7 +42,7 @@ const Header = () => {
       {/* Avatar */}
       <Avatar className="w-20 h-20">
         <AvatarImage
-          src="/images/Nicolas-teboul-Benjamin.webp"
+          src="/images/ben.webp"
           alt="Ma photo"
         />
         <AvatarFallback>BN-T</AvatarFallback>
