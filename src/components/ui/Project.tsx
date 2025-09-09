@@ -25,7 +25,8 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
               rel="noopener noreferrer"
               className="block"
             >
-              <div className="relative overflow-hidden rounded-md shadow-sm w-full h-56 md:w-64 md:h-40">
+              <div className="relative overflow-hidden rounded-md shadow-sm w-full min-w-[200px] h-56 md:h-40">
+
                 <Image
                   src={images[0]}
                   alt={`${title} image`}
@@ -37,7 +38,8 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
               </div>
             </Link>
           ) : (
-            <div className="relative overflow-hidden rounded-md shadow-sm w-full h-56 md:w-64 md:h-40">
+            <div className="relative overflow-hidden rounded-md shadow-sm w-full min-w-[200px] h-56 md:h-40">
+
               <Image
                 src={images[0]}
                 alt={`${title} image`}
