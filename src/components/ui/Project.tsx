@@ -13,7 +13,7 @@ const Project = ({ title, description, link, images }: ProjectProps) => {
   return (
     <div className="w-full p-6 border rounded-lg shadow-md bg-card text-card-foreground">
       {/* Description */}
-      <p className="mb-4">{description}</p>
+      <p className="mb-4 text-center">{description}</p>
 
       {/* Image avec lien */}
       {images && images.length > 0 && (
