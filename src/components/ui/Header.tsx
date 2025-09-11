@@ -8,9 +8,12 @@ import {
 } from "@/src/components/ui/avatar";
 import { FaLinkedin, FaGithub, FaMoon, FaSun } from "react-icons/fa";
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguage } from "@/src/contexts/LanguageContext";
 
 const Header = () => {
   const [isDark, setIsDark] = useState(false);
+  const { t } = useLanguage();
 
   // Charger la préférence au montage
   useEffect(() => {
@@ -50,6 +53,9 @@ const Header = () => {
 
       {/* Navigation */}
       <nav className="flex items-center gap-4">
+        {/* Sélecteur de langue */}
+        <LanguageSwitcher />
+
         {/* Bouton Toggle Dark/Light */}
         <button
           onClick={toggleTheme}
@@ -57,12 +63,10 @@ const Header = () => {
           className="p-1 bg-transparent border-none"
         >
           {isDark ? (
-            // Dark mode active → show moon in subtle black circle with white icon
             <span className="inline-flex rounded-full bg-gray-800/30 p-1">
               <FaMoon size={24} className="text-white" />
             </span>
           ) : (
-            // Light mode active → show sun in subtle white circle with black icon
             <span className="inline-flex rounded-full bg-white/30 p-1">
               <FaSun size={24} className="text-black" />
             </span>
@@ -89,13 +93,13 @@ const Header = () => {
           <FaLinkedin className="w-6 h-6" />
         </Link>
 
-        {/* Lien vers mon CV */}
+        {/* Lien vers mon CV - maintenant traduit */}
         <Button
           asChild
           className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
         >
           <Link href="/CV-BENJAMIN-NICOLAS-TEBOUL.pdf" target="_blank">
-            My CV
+            {t('header.cv')}
           </Link>
         </Button>
       </nav>

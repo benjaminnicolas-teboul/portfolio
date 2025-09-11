@@ -2,8 +2,10 @@
 import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import { Mail, Send } from "lucide-react";
+import { useLanguage } from "@/src/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -63,11 +65,10 @@ const Contact = () => {
           </div>
           
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Contact me
+            {t('contact.title')} 
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Have a project idea? An opportunity? Don&apos;t hesitate to reach
-            out!
+            {t('contact.subtitle')}
           </p>
         </div>
          )}
@@ -79,11 +80,10 @@ const Contact = () => {
                 <Send className="h-8 w-8 text-green-600 dark:text-green-400" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Message sent!
+                {t('contact.messageSentTitle')}
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Thank you for your message. I&apos;ll get back to you as soon as
-                possible.
+               {t('contact.messageSentDesc')}
               </p>
             </div>
           ) : (
@@ -95,7 +95,7 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Name *
+                    {t('contact.label.name')}
                   </label>
                   <input
                     type="text"
@@ -103,13 +103,13 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 text-black dark:text-white transition-colors"
-                    placeholder="Your name"
+                    placeholder={t('contact.placeholder.name')}
                     required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email *
+                     {t('contact.label.email')}
                   </label>
                   <input
                     type="email"
@@ -117,7 +117,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 text-black dark:text-white transition-colors"
-                    placeholder="email"
+                    placeholder={t('contact.placeholder.email')}
                     required
                   />
                 </div>
@@ -125,7 +125,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Subject *
+                   {t('contact.label.subject')}
                 </label>
                 <input
                   type="text"
@@ -133,14 +133,14 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 text-black dark:text-white transition-colors"
-                  placeholder="Subject of your message"
+                  placeholder={t('contact.placeholder.subject')}
                   required
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Message *
+                   {t('contact.label.message')}
                 </label>
                 <textarea
                   name="message"
@@ -148,7 +148,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   rows={6}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-700 text-black dark:text-white transition-colors resize-none placeholder-gray-500 dark:placeholder-gray-400"
-                  placeholder="Describe your project or request..."
+                  placeholder={t('contact.placeholder.message')}
                   required
                 />
               </div>
@@ -167,12 +167,12 @@ const Contact = () => {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                    Sending...
+                    {t('contact.button.sending')}
                   </>
                 ) : (
                   <>
                     <Send className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    Send Message
+                    {t('contact.button.sendMessage')}
                   </>
                 )}
               </button>
