@@ -6,8 +6,6 @@ import Projects from '@/src/data/projects';
 
 const ProjectList = () => {
   const { language, t } = useLanguage();
-  console.log(language);
-  console.log(language, typeof language);
   return (
     <section className="w-full p-6 bg-black">
       <h2 className="text-4xl font-bold text-white text-center mb-8">
