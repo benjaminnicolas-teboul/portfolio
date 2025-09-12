@@ -89,7 +89,7 @@ const Contact = () => {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
-                Send me a message
+                {t('form.title')}                
               </h3>
 
               <div className="grid sm:grid-cols-2 gap-4">

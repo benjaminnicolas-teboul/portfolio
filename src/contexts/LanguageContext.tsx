@@ -57,6 +57,11 @@ const translations: Translations = {
     es: '¿Tienes una idea de proyecto?',
     en: 'Have a project idea?...'
   },
+       'form.title': {
+    fr: 'envois moi un message',
+    es: 'envíame un mensaje',
+    en: 'send me a message'
+  },
     'contact.label.name': { fr: "Nom *", es: "Nombre *", en: "Name *" },
   'contact.label.email': { fr: "Email *", es: "Correo electrónico *", en: "Email *" },
   'contact.label.subject': { fr: "Sujet *", es: "Asunto *", en: "Subject *" },
