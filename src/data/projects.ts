@@ -50,6 +50,16 @@ const Projects: ProjectProps[] = [
     link: "https://benjaminnicolas-teboul.github.io/meteo-react",
     images: ["/images/meteo.webp"]
   },
+    {
+    title: "Argent Bank",
+    description: {
+      fr: "Application bancaire en React et Redux : authentification sécurisée, modification du pseudo, gestion centralisée du state, composants réutilisables et optimisation Green Code.",
+      es: "Aplicación bancaria en React y Redux: autenticación segura, cambio de apodo, gestión centralizada del estado, componentes reutilizables y optimización Green Code.",
+      en: "Banking application in React and Redux: secure authentication, nickname update, centralized state management, reusable components, and Green Code optimization."
+    },
+    link: "https://github.com/benjaminnicolas-teboul/ArgentBank-Front",
+    images: ["/images/argent-bank.webp"]
+  },
   {
     title: "Memory",
     description: {
